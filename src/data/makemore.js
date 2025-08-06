@@ -1,0 +1,17 @@
+export const makemoreData = [
+  { id: 1, question: "What type of model is being built in the video?", options: ["Word-level", "Sentence-level", "Character-level", "Byte-level"], answer: "Character-level" },
+  { id: 2, question: "The dataset used for training consists of __________.", options: ["Baby names", "Sentences", "Paragraphs", "Random words"], answer: "Baby names" },
+  { id: 3, question: "True/False: In a bigram model, the next character prediction depends on the last two characters.", options: ["True", "False"], answer: "False" },
+  { id: 4, question: "What is the role of the N matrix in the bigram model?", options: ["Stores probabilities", "Stores counts", "Stores embeddings", "None"], answer: "Stores counts" },
+  { id: 5, question: "Which is the correct formula for converting counts into probabilities?", options: ["P = N / sum(N)", "P = N.float() / N.sum(dim=1, keepdim=True)", "P = softmax(N)", "P = N ** 2 / sum(N)"], answer: "P = N.float() / N.sum(dim=1, keepdim=True)" },
+  { id: 6, question: "Why is it inefficient to normalize probabilities during every sampling step?", options: ["Because it increases memory", "Because it repeats computation", "Because it changes output", "None"], answer: "Because it repeats computation" },
+  { id: 7, question: "Which PyTorch operation ensures row-wise normalization?", options: ["P = N / torch.sum(N)", "P = N.float() / N.sum(dim=1, keepdim=True)", "P = torch.softmax(N, dim=0)", "P = torch.exp(N)"], answer: "P = N.float() / N.sum(dim=1, keepdim=True)" },
+  { id: 8, question: "Describe the process of generating a new name using the bigram model.", options: ["Start token → sample chars until end", "Random letters", "Predict last char only", "None"], answer: "Start token → sample chars until end" },
+  { id: 9, question: "True/False: The training loss for the bigram model is calculated using cross-entropy.", options: ["True", "False"], answer: "True" },
+  { id: 10, question: "If bigram performs poorly on unseen sequences, what might be the cause?", options: ["Overfitting", "Lack of context", "Data corruption", "Too many epochs"], answer: "Lack of context" },
+  { id: 11, question: "What is the key difference between bigram and neural network model?", options: ["NN memorizes dataset", "NN can generalize", "NN cannot handle big data", "No difference"], answer: "NN can generalize" },
+  { id: 12, question: "Why is tensor broadcasting useful?", options: ["To store counts", "For efficient normalization", "To add layers", "None"], answer: "For efficient normalization" },
+  { id: 13, question: "How can the bigram model be expressed in NN terms?", options: ["As a linear layer", "As a CNN", "As an RNN", "None"], answer: "As a linear layer" },
+  { id: 14, question: "Propose an extension to the bigram model.", options: ["Use trigrams", "Reduce tokens", "Use random guess", "None"], answer: "Use trigrams" },
+  { id: 15, question: "If generated names repeat patterns like 'aaaa', how can you fix it?", options: ["Temperature scaling", "Increase learning rate", "Remove letters", "None"], answer: "Temperature scaling" },
+];

@@ -1,0 +1,17 @@
+export const microgradData = [
+  { id: 1, question: "What library does Karpathy build in the video?", options: ["PyTorch", "TensorFlow", "Micrograd", "NumPy"], answer: "Micrograd" },
+  { id: 2, question: "True/False: Micrograd builds its computation graph statically before any operations.", options: ["True", "False"], answer: "False" },
+  { id: 3, question: "In backpropagation, the chain rule allows gradient flow by multiplying __________.", options: ["local derivatives", "weights", "biases", "loss values"], answer: "local derivatives" },
+  { id: 4, question: "Which activation function’s derivative is shown in the video?", options: ["ReLU", "Sigmoid", "Tanh", "Softmax"], answer: "Tanh" },
+  { id: 5, question: "Value nodes in micrograd accumulate gradients using which operator?", options: ["=", "+=", "-=", "*="], answer: "+=" },
+  { id: 6, question: "Explain why dynamic computation graphs are used in Micrograd.", options: [], answer: "Because they allow building the graph at runtime, making debugging and experimentation easier." },
+  { id: 7, question: "Which step is NOT part of training in micrograd?", options: ["Forward pass", "Backward pass", "Gradient descent update", "Data normalization"], answer: "Data normalization" },
+  { id: 8, question: "A computation graph built at runtime is known as a _________ graph.", options: ["Static", "Dynamic", "Hybrid", "Sparse"], answer: "Dynamic" },
+  { id: 9, question: "What problem emerges if gradients are overwritten each step?", options: ["Overfitting", "Vanishing gradients", "Incorrect accumulation", "Lower learning rate"], answer: "Incorrect accumulation" },
+  { id: 10, question: "What role does the chain rule play in backpropagation?", options: [], answer: "It combines local derivatives by multiplication to compute the overall gradient for each variable." },
+  { id: 11, question: "What does the Value class in micrograd primarily represent?", options: [], answer: "A scalar with data and gradient" },
+  { id: 12, question: "How would you modify Micrograd to support vectorized operations?", options: [], answer: "By changing the Value class to handle tensors and updating backward methods to propagate gradients through arrays." },
+  { id: 13, question: "Which of the following is an advantage of dynamic computation graphs?", options: [], answer: "Easier debugging and flexibility" },
+  { id: 14, question: "If your loss gradient with respect to weight w is zero, what does it imply?", options: [], answer: "Flat loss landscape locally" },
+  { id: 15, question: "Why does Karpathy use scalar operations and simple Python code instead of a full framework?", options: [], answer: "To teach the underlying concepts of backpropagation and gradient flow in the simplest way possible." },
+];
